@@ -1,0 +1,41 @@
+body{
+	font-family: $hind;
+	margin: 0;
+	padding: 0;
+} 
+
+a{
+	text-decoration: none;
+}
+
+.blog-header{
+	h1{
+		@include font-size(20);
+	}
+	
+}
+
+
+.nav-bar{
+	background: $gris-azul;
+	overflow: hidden;
+	ul{
+		
+	}
+	li{
+		display: inline-block;
+		width: 100%;
+		overflow: hidden;
+
+	}
+	a{
+		@include font-size(14);
+		width: 100%;
+		display: inline-block;
+		color: $azul-mar;
+		&:focus{
+			background: $azul-claro;
+		}
+	}
+	
+}

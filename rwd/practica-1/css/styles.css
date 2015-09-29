@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Hind:400,500,600,700,300);
+body {
+  font-family: "Hind", Arial, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.blog-header h1 {
+  font-size: 20px;
+  font-size: 2rem; }
+
+.nav-bar {
+  background: #BDCCD6;
+  overflow: hidden; }
+  .nav-bar li {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden; }
+  .nav-bar a {
+    font-size: 14px;
+    font-size: 1.4rem;
+    width: 100%;
+    display: inline-block;
+    color: #1674B6; }
+    .nav-bar a:focus {
+      background: #B3DBF4; }
+
+/*# sourceMappingURL=styles.css.map */
