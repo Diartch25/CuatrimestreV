@@ -9,33 +9,76 @@ a{
 }
 
 .blog-header{
+	background: $gris-azul;
+	overflow: hidden;
 	h1{
 		@include font-size(20);
+		padding: 0 0 0 3%;
+		color: $azul-mar;
+		font-weight: lighter;
 	}
 	
 }
 
+.icon-network{
+	overflow: hidden;
+	margin: 10px 0 0 0;
+	padding: 0;
+	li{
+		display: inline-block;
+		width: 50%;
+		float: left;
+	}
+}
+
+.fb-special{
+	background: $facebook;
+}
+
+.tw-special{
+	background: $twitter;
+}
+
+.post-block{
+	background: $gris-azul;
+	padding:20px 5%;
+	margin-bottom: 10px;
+	img{
+		width: 100%;
+	}
+}
 
 .nav-bar{
 	background: $gris-azul;
 	overflow: hidden;
-	ul{
-		
-	}
+	padding: 0;
+	margin: 10px 0;
 	li{
 		display: inline-block;
 		width: 100%;
-		overflow: hidden;
 
 	}
 	a{
-		@include font-size(14);
+		@include font-size(12);
 		width: 100%;
 		display: inline-block;
+		padding: 7px 0 5px 3%;
+		margin: 0;
 		color: $azul-mar;
+		font-weight: lighter;
 		&:focus{
 			background: $azul-claro;
 		}
 	}
 	
+}
+
+footer{
+	background: $negro;
+	overflow: hidden;
+	h3{
+		color: $blanco;
+		font-weight: lighter;
+		padding: 0 3%;
+	}
 }

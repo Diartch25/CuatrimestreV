@@ -7,24 +7,64 @@ body {
 a {
   text-decoration: none; }
 
-.blog-header h1 {
-  font-size: 20px;
-  font-size: 2rem; }
+.blog-header {
+  background: #BDCCD6;
+  overflow: hidden; }
+  .blog-header h1 {
+    font-size: 20px;
+    font-size: 2rem;
+    padding: 0 0 0 3%;
+    color: #1674B6;
+    font-weight: lighter; }
+
+.icon-network {
+  overflow: hidden;
+  margin: 10px 0 0 0;
+  padding: 0; }
+  .icon-network li {
+    display: inline-block;
+    width: 50%;
+    float: left; }
+
+.fb-special {
+  background: #46629E; }
+
+.tw-special {
+  background: #55ACEE; }
+
+.post-block {
+  background: #BDCCD6;
+  padding: 20px 5%;
+  margin-bottom: 10px; }
+  .post-block img {
+    width: 100%; }
 
 .nav-bar {
   background: #BDCCD6;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 0;
+  margin: 10px 0; }
   .nav-bar li {
     display: inline-block;
-    width: 100%;
-    overflow: hidden; }
+    width: 100%; }
   .nav-bar a {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 12px;
+    font-size: 1.2rem;
     width: 100%;
     display: inline-block;
-    color: #1674B6; }
+    padding: 7px 0 5px 3%;
+    margin: 0;
+    color: #1674B6;
+    font-weight: lighter; }
     .nav-bar a:focus {
       background: #B3DBF4; }
+
+footer {
+  background: #515251;
+  overflow: hidden; }
+  footer h3 {
+    color: #F4F4F4;
+    font-weight: lighter;
+    padding: 0 3%; }
 
 /*# sourceMappingURL=styles.css.map */
