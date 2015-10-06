@@ -16,28 +16,11 @@ a {
     padding: 0 0 0 3%;
     color: #1674B6;
     font-weight: lighter; }
-
-.icon-network {
-  overflow: hidden;
-  margin: 10px 0 0 0;
-  padding: 0; }
-  .icon-network li {
-    display: inline-block;
-    width: 50%;
-    float: left; }
-
-.fb-special {
-  background: #46629E; }
-
-.tw-special {
-  background: #55ACEE; }
-
-.post-block {
-  background: #BDCCD6;
-  padding: 20px 5%;
-  margin-bottom: 10px; }
-  .post-block img {
-    width: 100%; }
+    @media (min-width: 680px) {
+      .blog-header h1 {
+        display: inline-block;
+        width: 50%;
+        float: left; } }
 
 .nav-bar {
   background: #BDCCD6;
@@ -59,9 +42,85 @@ a {
     .nav-bar a:focus {
       background: #B3DBF4; }
 
+.icon-network {
+  overflow: hidden;
+  margin: 10px 0 0 0;
+  padding: 0;
+  transition: all 0.6s cubic-bezier(0, 0.85, 0.64, 0.96); }
+  @media (min-width: 680px) {
+    .icon-network {
+      float: right;
+      margin: 0 7% 0 0;
+      transition: all 0.6s cubic-bezier(0, 0.85, 0.64, 0.96); } }
+  .icon-network li {
+    display: inline-block;
+    width: 50%;
+    float: left; }
+    @media (min-width: 680px) {
+      .icon-network li {
+        padding: 0px 22px; } }
+  .icon-network p {
+    margin: 0;
+    padding: 12px 0 10px 0; }
+  .icon-network a {
+    text-decoration: none;
+    margin: 0 auto;
+    display: table;
+    color: #FFF;
+    font-size: 15px;
+    font-size: 1.5rem; }
+
+.fb-special {
+  background: #46629E; }
+  .fb-special:active {
+    background: #6D87BA; }
+
+.tw-special {
+  background: #55ACEE; }
+  .tw-special:active {
+    background: #95C8ED; }
+
+.post-group {
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 10px; }
+  @media (min-width: 680px) {
+    .post-group {
+      float: left;
+      width: 65%; } }
+
+.post-block {
+  display: inline-block;
+  background: #BDCCD6;
+  padding: 20px 5%;
+  margin-bottom: 10px; }
+  @media (min-width: 680px) {
+    .post-block {
+      width: 37%;
+      margin: 0 1% 10px; } }
+  .post-block img {
+    max-width: 100%;
+    height: auto; }
+
+.control-page {
+  background: #BDCCD6;
+  width: 97%;
+  display: inline-block;
+  margin: 0 1%; }
+
+.recents-articles-block {
+  display: inline-block;
+  background: #BDCCD6; }
+  @media (min-width: 680px) {
+    .recents-articles-block {
+      float: left;
+      width: 34%;
+      margin-right: 1%; } }
+
 footer {
   background: #515251;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%; }
   footer h3 {
     color: #F4F4F4;
     font-weight: lighter;

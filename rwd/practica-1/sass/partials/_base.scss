@@ -16,36 +16,13 @@ a{
 		padding: 0 0 0 3%;
 		color: $azul-mar;
 		font-weight: lighter;
+		@media (min-width: 680px){
+			display: inline-block;
+			width: 50%;
+			float: left;
+		}
 	}
 	
-}
-
-.icon-network{
-	overflow: hidden;
-	margin: 10px 0 0 0;
-	padding: 0;
-	li{
-		display: inline-block;
-		width: 50%;
-		float: left;
-	}
-}
-
-.fb-special{
-	background: $facebook;
-}
-
-.tw-special{
-	background: $twitter;
-}
-
-.post-block{
-	background: $gris-azul;
-	padding:20px 5%;
-	margin-bottom: 10px;
-	img{
-		width: 100%;
-	}
 }
 
 .nav-bar{
@@ -72,10 +49,99 @@ a{
 	}
 	
 }
+.icon-network{
+	overflow: hidden;
+	margin: 10px 0 0 0;
+	padding: 0;
+	transition: all 0.6s cubic-bezier(0,0.85,0.64,0.96);
+	@media (min-width: 680px){
+		float: right;
+		margin: 0 7% 0 0;
+		transition: all 0.6s cubic-bezier(0,0.85,0.64,0.96);
+
+	}
+	li{
+		display: inline-block;
+		width: 50%;
+		float: left;
+		@media (min-width: 680px){
+			padding: 0px 22px;
+		}
+	}
+	p{	
+		margin: 0;
+		padding: 12px 0 10px 0;
+	}
+	a{
+		text-decoration: none;
+    		margin: 0 auto;
+    		display: table;
+    		color: #FFF;
+    		@include font-size(15);
+    	}
+}
+
+.fb-special{
+	background: $facebook;
+	&:active{
+		background: $fbhover;
+	}
+}
+
+.tw-special{
+	background: $twitter;
+	&:active{
+		background: $twhover;
+	}
+}
+
+.post-group{
+	display: inline-block;
+	overflow: hidden;
+	margin-bottom: 10px;
+	@media (min-width: 680px){
+		float: left;
+    		width: 65%;
+	}
+}
+
+.post-block{
+	display: inline-block;
+	background: $gris-azul;
+	padding:20px 5%;
+	margin-bottom: 10px;
+	@media (min-width: 680px){
+		width: 37%;
+    		margin: 0 1% 10px;
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.control-page{
+	background: $gris-azul;
+	width: 97%;
+    	display: inline-block;
+   	margin: 0 1%;
+}
+
+.recents-articles-block{
+	display: inline-block;
+	background: $gris-azul;
+	@media (min-width: 680px){
+		float: left;
+    		width: 34%;
+    		margin-right: 1%;
+
+	}
+}
 
 footer{
-	background: $negro;
-	overflow: hidden;
+	background: #515251;
+    	overflow: hidden;
+    	width: 100%;
 	h3{
 		color: $blanco;
 		font-weight: lighter;
