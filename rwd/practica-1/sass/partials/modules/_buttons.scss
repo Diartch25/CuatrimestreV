@@ -1,0 +1,18 @@
+.button{
+	display: inline-block;
+	margin: 2px 2px;
+    	padding: 6px 24px;
+    	@include font-size (9);
+}
+
+.button-read{
+	border-radius: 2px;
+	background: $buttons;
+	color: $white;
+	transition: all 0.6s cubic-bezier(0,0.85,0.64,0.96);
+	&:hover{
+		background: $buttonshv;
+		color: $white;
+		transition: all 0.6s cubic-bezier(0,0.85,0.64,0.96);
+	}
+}

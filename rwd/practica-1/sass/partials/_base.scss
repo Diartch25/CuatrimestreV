@@ -1,150 +1,96 @@
+// 
+// Estilos Base
+//
+
 body{
 	font-family: $hind;
 	margin: 0;
 	padding: 0;
+	background: $white;
 } 
+
+.wrapper{
+	background: $wrapper;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 10px 0 0 0;
+	@media (min-width: 1024px){
+		padding: 10px 1% 0 1%;
+	}
+	@media (min-width: 1280px){
+		width: 1280px;
+		margin: 0 auto;
+	}
+}
 
 a{
 	text-decoration: none;
 }
 
-.blog-header{
-	background: $gris-azul;
-	overflow: hidden;
-	h1{
-		@include font-size(20);
-		padding: 0 0 0 3%;
-		color: $azul-mar;
-		font-weight: lighter;
-		@media (min-width: 680px){
-			display: inline-block;
-			width: 50%;
-			float: left;
-		}
+h1{
+	@include font-size(20);
+	color: $titles;
+	font-weight: lighter;
+}
+
+h2{
+	margin: 0;
+	font-weight: lighter;
+	@include line-height(10);
+	a{
+		color: $titles;
 	}
 	
 }
 
-.nav-bar{
-	background: $gris-azul;
-	overflow: hidden;
-	padding: 0;
-	margin: 10px 0;
-	li{
-		display: inline-block;
-		width: 100%;
-
-	}
-	a{
-		@include font-size(12);
-		width: 100%;
-		display: inline-block;
-		padding: 7px 0 5px 3%;
-		margin: 0;
-		color: $azul-mar;
-		font-weight: lighter;
-		&:focus{
-			background: $azul-claro;
-		}
-	}
-	
-}
-.icon-network{
-	overflow: hidden;
-	margin: 10px 0 0 0;
-	padding: 0;
-	transition: all 0.6s cubic-bezier(0,0.85,0.64,0.96);
-	@media (min-width: 680px){
-		float: right;
-		margin: 0 7% 0 0;
-		transition: all 0.6s cubic-bezier(0,0.85,0.64,0.96);
-
-	}
-	li{
-		display: inline-block;
-		width: 50%;
-		float: left;
-		@media (min-width: 680px){
-			padding: 0px 22px;
-		}
-	}
-	p{	
-		margin: 0;
-		padding: 12px 0 10px 0;
-	}
-	a{
-		text-decoration: none;
-    		margin: 0 auto;
-    		display: table;
-    		color: #FFF;
-    		@include font-size(15);
-    	}
+h2 ~ h3{
+	color: $stand-out;
+	font-weight: lighter;
 }
 
-.fb-special{
-	background: $facebook;
-	&:active{
-		background: $fbhover;
+.title-link{
+	margin: 24px 0 -1px 0;
+	@include font-size(13);
+	@include line-height(14);
+	@media (min-width: 870px){
+		@include font-size(16);
+		@include line-height(18);
 	}
 }
 
-.tw-special{
-	background: $twitter;
-	&:active{
-		background: $twhover;
-	}
+.title-link ~ h3{
+	@include font-size(10);
+	margin: 2px 0;
 }
 
-.post-group{
-	display: inline-block;
-	overflow: hidden;
-	margin-bottom: 10px;
-	@media (min-width: 680px){
-		float: left;
-    		width: 65%;
-	}
+.title-post{
+	margin: 24px 0 -1px 0;
+	@include font-size(13);
+	@include line-height(16);
 }
 
-.post-block{
-	display: inline-block;
-	background: $gris-azul;
-	padding:20px 5%;
-	margin-bottom: 10px;
-	@media (min-width: 680px){
-		width: 37%;
-    		margin: 0 1% 10px;
-	}
-	img{
-		max-width: 100%;
-		height: auto;
-	}
+.title-post ~ h3{
+	@include font-size(8);
+	margin: 2px 0;
 }
 
-.control-page{
-	background: $gris-azul;
-	width: 97%;
-    	display: inline-block;
-   	margin: 0 1%;
-}
-
-.recents-articles-block{
-	display: inline-block;
-	background: $gris-azul;
-	@media (min-width: 680px){
-		float: left;
-    		width: 34%;
-    		margin-right: 1%;
-
-	}
+img{
+	max-width: 100%;
+	height: auto;
+	border-radius: 2px
 }
 
 footer{
-	background: #515251;
+	background: $basic;
     	overflow: hidden;
-    	width: 100%;
 	h3{
-		color: $blanco;
+		display: inline-block;
+		color: $white;
 		font-weight: lighter;
-		padding: 0 3%;
+
+	}
+	@media (min-width: 1280px){
+		width: 1280px;
+		margin: 0 auto;
 	}
 }

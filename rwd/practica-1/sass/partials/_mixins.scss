@@ -1,4 +1,11 @@
+/*Control de tamaños de tipografía*/
+
 @mixin font-size($size) {
   	font-size: $size + px;
   	font-size: ($size / 10) + rem;
+}
+
+@mixin line-height($size) {
+  	line-height: $size + px;
+  	line-height: ($size / 10) + rem;
 }
