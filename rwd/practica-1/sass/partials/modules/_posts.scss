@@ -4,61 +4,61 @@
 
 
 .post-group{
-	display: inline-block;
-	float:left;
-	overflow: hidden;
-	margin-bottom: 10px;
-	box-sizing: border-box;
-	@media (min-width: 680px){
-    		margin: 0 2% 10px 1%;
-    		width: 50%;
-	}
+    display: inline-block;
+    float:left;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    @media (min-width: 680px){
+            margin: 0 2% 10px 1%;
+            width: 50%;
+    }
 
-	@media (min-width: 1024px){
-		width: 60%;
-	}
+    @media (min-width: 1024px){
+        width: 60%;
+    }
 }
 
 .post-block{
-	display: inline-block;
-	background: $bground;
-	padding:20px 5%;
-	margin-bottom: 10px;
-	border-radius: 2px;
-	@media (min-width: 1024px){
-		width: 37%;
-    		margin: 0 2% 10px 0;
-	}
+    display: inline-block;
+    background: $bground;
+    padding:20px 5%;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border-bottom: 10px solid $basic;
+    @media (min-width: 1024px){
+        width: 37%;
+            margin: 0 2% 10px 0;
+    }
 }
 
 /*Sección recientes*/
 
 .recents-articles-block{
-	width: 100%;
-	background: $bground;
-	box-sizing: border-box;
-	display: inline-block;
-	float:left;
-	padding: 53px 4%;
-	border-radius: 2px;
-	@media (min-width: 680px){
-		width: 46%;
-	}
-	@media (min-width: 1024px){
-		width: 36%;
-	}
+    width: 100%;
+    background: $bground;
+    box-sizing: border-box;
+    display: inline-block;
+    float:left;
+    padding: 53px 4%;
+    border-radius: 2px;
+    @media (min-width: 680px){
+        width: 46%;
+    }
+    @media (min-width: 1024px){
+        width: 36%;
+    }
 }
 
 
 /*Linea de control*/
 
 .control-page{
-	background: $bground;
-	width: 100%;
-    	display: inline-block;
-    	@media (min-width: 680px){
-    		width: 97%;
-    		margin: 0 1%;
-	}
-   	
+    background: $bground;
+    width: 100%;
+        display: inline-block;
+        @media (min-width: 680px){
+            width: 97%;
+    }
+    
 }

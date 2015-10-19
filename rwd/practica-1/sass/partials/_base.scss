@@ -3,94 +3,98 @@
 //
 
 body{
-	font-family: $hind;
-	margin: 0;
-	padding: 0;
-	background: $white;
+    font-family: $hind;
+    margin: 0;
+    padding: 0;
+    background: $body;
 } 
 
 .wrapper{
-	background: $wrapper;
-	overflow: hidden;
-	box-sizing: border-box;
-	padding: 10px 0 0 0;
-	@media (min-width: 1024px){
-		padding: 10px 1% 0 1%;
-	}
-	@media (min-width: 1280px){
-		width: 1280px;
-		margin: 0 auto;
-	}
+    background: $wrapper;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px 0 0 0;
+    @media (min-width: 1024px){
+        padding: 10px 1% 0 1%;
+    }
+    @media (min-width: 1280px){
+        width: 1280px;
+        margin: 0 auto;
+    }
 }
 
 a{
-	text-decoration: none;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
 }
 
 h1{
-	@include font-size(20);
-	color: $titles;
-	font-weight: lighter;
+    @include font-size(20);
+    color: $titles;
+    font-weight: lighter;
 }
 
 h2{
-	margin: 0;
-	font-weight: lighter;
-	@include line-height(10);
-	a{
-		color: $titles;
-	}
-	
+    margin: 0;
+    font-weight: lighter;
+    @include line-height(10);
+    a{
+        color: $titles;
+    }
+    
 }
 
 h2 ~ h3{
-	color: $stand-out;
-	font-weight: lighter;
+    color: $stand-out;
+    font-weight: lighter;
 }
 
 .title-link{
-	margin: 24px 0 -1px 0;
-	@include font-size(13);
-	@include line-height(14);
-	@media (min-width: 870px){
-		@include font-size(16);
-		@include line-height(18);
-	}
+    margin: 24px 0 -1px 0;
+    @include font-size(13);
+    @include line-height(14);
+    @media (min-width: 870px){
+        @include font-size(16);
+        @include line-height(18);
+    }
 }
 
 .title-link ~ h3{
-	@include font-size(10);
-	margin: 2px 0;
+    @include font-size(10);
+    margin: 2px 0;
 }
 
 .title-post{
-	margin: 24px 0 -1px 0;
-	@include font-size(13);
-	@include line-height(16);
+    margin: 24px 0 -1px 0;
+    @include font-size(13);
+    @include line-height(16);
 }
 
 .title-post ~ h3{
-	@include font-size(8);
-	margin: 2px 0;
+    @include font-size(8);
+    margin: 2px 0;
 }
 
 img{
-	max-width: 100%;
-	height: auto;
-	border-radius: 2px
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px
 }
 
 footer{
-	background: $basic;
-    	overflow: hidden;
-	h3{
-		display: inline-block;
-		color: $white;
-		font-weight: lighter;
+    background: $basic;
+        overflow: hidden;
+    h3{
+        display: inline-block;
+        color: $white;
+        font-weight: lighter;
 
-	}
-	@media (min-width: 1280px){
-		width: 1280px;
-		margin: 0 auto;
-	}
+    }
+    @media (min-width: 1280px){
+        width: 1280px;
+        margin: 0 auto;
+    }
 }
