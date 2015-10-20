@@ -17,11 +17,9 @@
     background: $bgroundb;
     border-bottom: 10px solid $basic;
     margin: 0 0 15px 0;
-    display: none;
     @media (min-width: 680px){
         margin: 10px 1%;
         background: $bgroundc;
-        display: block;
     }
     a{
         @include font-size(12);
@@ -32,6 +30,26 @@
         }
     }
     
+}
+
+.toggle-off{
+    transition: all 0.9s cubic-bezier(0,-0.05,0.22,0.87);
+    @media (min-width:320px){
+        height: 0
+    }
+    @media (min-width: 680px){
+        height: 42px;
+    }
+}
+
+.toggle-on{
+    transition: all 0.9s cubic-bezier(0,-0.05,0.22,0.87);
+    @media (min-width:320px){
+        height: 170px;
+    }
+    @media (min-width: 680px){
+        height: 42px;
+    }
 }
 
 .menu-bar{

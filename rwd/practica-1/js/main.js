@@ -1,4 +1,4 @@
-$(document).ready( function() {
+/*$(document).ready( function() {
     var displayClass = $('.nav-bar').css('display');
     console.log(displayClass);
     $('#display').click(
@@ -10,4 +10,7 @@ $(document).ready( function() {
             }
     })
     
-} );
+} );*/
+$('#display').on('click', function(){
+    $('.toggle-off').toggleClass('toggle-on');
+});
